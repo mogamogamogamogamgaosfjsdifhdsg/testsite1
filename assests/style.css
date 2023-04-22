@@ -1,0 +1,263 @@
+/* start new life :dies: */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    transition: .25s ease;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    /*background: linear-gradient(90deg,#151515,#181818);*/
+    /*background: linear-gradient(0deg,#181818,rgb(49, 125, 212));*/
+    /*background-color: #1f1f1f;    */
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/565/19/755/minecraft-sea-hd-wallpaper-preview.jpg);
+    backdrop-filter: blur(20px) saturate(125%);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+
+@keyframes name{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes name2{
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+header .name{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.5cm;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 7px 35px;
+    color: white;
+    transition: color 0.3s ease-out 1ms;
+    font-family: poppins;
+    font-weight: normal;
+    font-size: 0.5cm;
+    border-radius: 0px;
+}
+
+header ul li a:hover{
+    color: silver;
+    transition: color 0.3s ease-out 1ms;
+}
+
+.author{
+    text-decoration: none;
+    padding: 7px 35px;
+    color: white;
+    transition: font-size 0.5s ease-out 1ms;
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 0.5cm;
+}
+
+/*header ul li a:hover,
+a.active{
+    color: white;
+    font-size: 0.6cm;
+    transition: font-size 0.5s ease-out 1ms
+}
+
+header ul li a.active{
+    color: white;
+    font-size: 0.6cm;
+    transition: font-size 0.5s ease-out 1ms
+}*/
+
+::-webkit-scrollbar-thumb {
+    background: #95a5a6;
+    background-color: rgba(128,128,128,.4);
+    border-radius: 4px;
+}
+
+.section{
+    /*height: 100%;
+    width: 100%;
+    */
+    position: flex;
+    padding: 100px;
+}
+
+.section2{
+    position: flex;
+    padding: 100px;
+}
+
+#text{
+    text-align: center;
+    color: white;
+    font-size: 1cm;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-top: 15%;
+    animation-name: name;
+    animation-duration: 0.5s;
+    text-shadow: 0 0 5px white;
+}
+
+#text2{
+    text-align: center;
+    color: white;
+    font-size: 0.6cm;
+    padding-top: 1%;
+    font-weight: normal;
+    animation-name: name;
+    text-shadow: 0 0 5px white;
+    animation-duration: 0.5s;
+}
+
+#text3{
+    text-shadow: 0 0 5px white;
+    text-align: center;
+    color: white;
+    font-size: 0.3cm;
+    padding-top: 1%;
+    font-weight: normal;
+    animation-name: name;
+    animation-duration: 0.5s;
+}
+
+#text4{
+    text-align: center;
+    color: white;
+    font-size: 0.6cm;
+    padding-top: 1%;
+    font-weight: normal;
+    animation-name: name;
+    animation-duration: 0.5s;
+}
+
+
+body section li a{
+    text-align: center;
+    color: silver;
+    font-size: 0.6cm;
+    padding-top: 0.5%;
+    font-weight: normal;
+    animation-name: name;
+    animation-duration: 0.5s;
+}
+
+section{
+    list-style: none;
+    margin-left: 20px;
+}
+
+
+.line{
+    color: silver;
+    background: silver;
+    background-color: silver;
+    display: flex;
+    animation-name: name;
+    animation-duration: 0.5s;
+    margin: 20px;
+}
+
+.changelogs{
+    background: transparent!important;
+    text-decoration: none;
+    padding: 7px 35px;
+    color: white;
+    transition: font-size 0.5s ease-out 1ms;
+    font-family: poppins, segoe fluent icons;
+    font-weight: normal;
+    font-size: 0.5cm;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    align-items: center;
+    transition: background 0.5s ease-out 1ms;
+}
+
+.changelogs:hover{
+    background: #ffffff0d!important;
+    transition: background 0.5s ease-out 1ms;
+}
+
+.executors{
+    background: #ffffff0d!important;
+    backdrop-filter: blur(60px) saturate(125%);
+    backface-visibility: hidden;
+    max-width: 380px;
+    width: 100%;
+    height: 210px;
+    padding: 8px;
+    margin: 15px;
+    vertical-align: top;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    display: inline-flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-left: 50px;
+    animation-name: name;
+    animation-duration: 0.5s;
+}
+
+.executors:hover{
+    transform: scale(1.05);
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.downloadbtn{
+    background: #202020;
+    border-radius: 5px;
+}
+
+.okokok{
+    background-color: transparent;
+    padding-bottom: 1%;
+    position: static;
+}
